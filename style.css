@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Factor A', sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 100px auto;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+    max-width: 155px;
+    margin-bottom: 30px;
+}
+
+.logo-heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+@font-face {
+    font-family: 'Factor A';
+    src: url('./Fonts/FactorA-Regular.eot');
+    src: local('Factor A Regular'), local('FactorA-Regular'),
+        url('./Fonts/FactorA-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Fonts/FactorA-Regular.woff2') format('woff2'),
+        url('./Fonts/FactorA-Regular.woff') format('woff'),
+        url('./Fonts/FactorA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-container_item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* border: 1px solid red; */
+    min-height: 337px;
+
+}
+
+.border-right {
+    border-right: 1px solid rgba(16, 18, 41, 0.13);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.arrow {
+    width: 22px;
+    align-self: flex-end;
+    transition: 0.3s;
+    margin: 30px 30px 0 0;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+/* nav li:hover > a i { transform: rotate(45deg) } */
+
+.logo-container_item:hover > .arrow { transform: rotate(45deg) }
+
+.logo-inner_container {
+    padding: 30px 0 30px 30px;
+}
+
+.logo-inner_container {
+    border-top: 1px solid rgba(16, 18, 41, 0.13);
+    /* margin-right: 30px; */
+}
+
+.logo-container:nth-child(even) {
+    margin-left: 0px;
+}
+
+.logo-container:last-child {
+    border-bottom: 1px solid rgba(16, 18, 41, 0.13);
+}
+
+.icon {
+    height: 100px;
+}
+
+.map-banner {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.icons-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.icon-text {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 170px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .logo-container {
+        grid-template-columns: 1fr;
+    
+    }
+    .border-right {
+        border-right: 0 !important;
+    }
+    
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}
+
+
+/* @font-face {
+    font-family: 'Factor A';
+    src: url('FactorAMedium-Regular.eot');
+    src: local('Factor A Medium Regular'), local('FactorAMedium-Regular'),
+        url('FactorAMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FactorAMedium-Regular.woff2') format('woff2'),
+        url('FactorAMedium-Regular.woff') format('woff'),
+        url('FactorAMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Factor A';
+    src: url('FactorA-Bold.eot');
+    src: local('Factor A Bold'), local('FactorA-Bold'),
+        url('FactorA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FactorA-Bold.woff2') format('woff2'),
+        url('FactorA-Bold.woff') format('woff'),
+        url('FactorA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Factor A';
+    src: url('FactorALight-Regular.eot');
+    src: local('Factor A Light Regular'), local('FactorALight-Regular'),
+        url('FactorALight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FactorALight-Regular.woff2') format('woff2'),
+        url('FactorALight-Regular.woff') format('woff'),
+        url('FactorALight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} */
